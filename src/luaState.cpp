@@ -12,6 +12,8 @@
 
 #include <util.h>
 
+#include "core/variant/typed_array.h"
+
 void LuaState::setState(lua_State *state, LuaAPI *api, bool bindAPI) {
 	this->L = state;
 	if (!bindAPI) {

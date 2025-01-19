@@ -9,6 +9,8 @@
 #include <godot_cpp/classes/file_access.hpp>
 #endif
 
+#include "core/variant/typed_array.h"
+
 LuaAPI::LuaAPI() {
 	lState = lua_newstate(&LuaAPI::luaAlloc, (void *)&luaAllocData);
 	Ref<LuaDefaultObjectMetatable> mt;
